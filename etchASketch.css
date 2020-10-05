@@ -1,0 +1,29 @@
+html {
+  --gridSize: 16;
+  --cellSize: calc(960px / var(--gridSize));
+}
+
+body {
+  margin: 0px;
+}
+
+#btn-container {
+  margin: 20px 0px 100px 450px;
+}
+
+#sketch-container {
+  display: grid;
+  grid-template-columns: repeat(var(--gridSize), var(--cellSize));
+  grid-template-rows: repeat(var(--gridSize), var(--cellSize));
+  width: 960px;
+  height: 960px;
+  background-color: rgb(0,0,255);
+}
+
+.clear-grid {
+  width: 60px;
+}
+
+.colorChanged {
+  background-color: red;
+}
